@@ -16,16 +16,15 @@ fi
 while :
 do
     # Check helm is installed
-    helm version
+    helm version | grep version
 
-    if [ $? == 0 ]; then
+    if [ $? -eq 0 ]; then
+        break
+    else
         # Install helm3
         curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
         chmod 700 get_helm.sh
         ./get_helm.sh
-    fi
-    else
-        break
     fi
 done
 
@@ -67,4 +66,4 @@ cat /root/.kube/config
 #   $ kubectl -n federate-me create cm my-cm
 #   $ kubefedctl -n federate-me federate configmap my-cm
 #   $ kubectl -n federate-me describe federatedconfigmap my-cm
-#   $ kubectl describe ns federate-me (check each clusters) 
+#   $ kubectl describe ns federate-me (check each clusters)
