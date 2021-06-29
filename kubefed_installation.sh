@@ -67,4 +67,4 @@ cat /root/.kube/config
 #   $ kubectl -n federate-me create cm my-cm
 #   $ kubefedctl -n federate-me federate configmap my-cm
 #   $ kubectl -n federate-me describe federatedconfigmap my-cm
-#   $ kubectl describe ns federate-me (check each clusters)
+#   $ kubectl describe ns federate-me (check each clusters) 
