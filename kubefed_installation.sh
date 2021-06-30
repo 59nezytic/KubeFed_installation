@@ -39,7 +39,7 @@ OS=linux
 ARCH=amd64
 
 # Install kubefedctl
-curl -LO https://github.com/kubernetes-sigs/kubefed/releases/download/v${VERSION}/kubefedctl-${VERSION}-${OS}-${ARCH}.tgz
+curl -LO https://github.com/kubernetes-sigs/kubefed/releases/download/v${KUBEFED_VERSION}/kubefedctl-${KUBEFED_VERSION}-${OS}-${ARCH}.tgz
 tar -zxvf kubefedctl-*.tgz
 chmod u+x kubefedctl
 sudo mv kubefedctl /usr/local/bin/
