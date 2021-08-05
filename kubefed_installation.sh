@@ -46,7 +46,7 @@ sudo mv kubefedctl /usr/local/bin/
 
 echo -e '\n'
 echo -e '\n'
-echo 'Change your own config file'
+echo -e '*******************Change your own config file*******************\n\n\n\n\n'
 
 cat /root/.kube/config
 
