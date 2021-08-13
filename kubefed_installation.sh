@@ -29,7 +29,7 @@ do
 done
 
 # If you want to install another KubeFed version, Change this value
-KUBEFED_VERSION=0.8.0
+KUBEFED_VERSION=0.8.1
 
 # Repo add and create namespace
 helm repo add kubefed-charts https://raw.githubusercontent.com/kubernetes-sigs/kubefed/master/charts
