@@ -32,7 +32,7 @@ done
 KUBEFED_VERSION=0.8.1
 
 # Repo add and create namespace
-helm repo add kubefed-charts https://raw.githubusercontent.com/kubernetes-sigs/kubefed/master/charts
+helm repo add kubefed-charts https://raw.githubusercontent.com/kubernetes-sigs/kubefed/{KUBEFED_VERSION}/charts
 helm --namespace kube-federation-system upgrade -i kubefed kubefed-charts/kubefed --version=${KUBEFED_VERSION} --create-namespace
 
 OS=linux
