@@ -29,10 +29,10 @@ do
 done
 
 # If you want to install another KubeFed version, Change this value
-KUBEFED_VERSION=0.8.1
 
 # Repo add and create namespace
-helm repo add kubefed-charts https://raw.githubusercontent.com/kubernetes-sigs/kubefed/{KUBEFED_VERSION}/charts
+helm repo add kubefed-charts https://raw.githubusercontent.com/kubernetes-sigs/kubefed/master/charts
+KUBEFED_VERSION=$(helm search repo kubefed | grep kubefed-charts | awk -- '{printf $2}')
 helm --namespace kube-federation-system upgrade -i kubefed kubefed-charts/kubefed --version=${KUBEFED_VERSION} --create-namespace
 
 OS=linux
