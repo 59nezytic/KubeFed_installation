@@ -16,5 +16,5 @@ $ kubectl config use-context {CONTEXT_NAME}
 ```
 ```
 $ kubefedctl join {CONTEXT_NAME} --cluster-context {CONTEXT_NAME} --host-cluster-context {HOSTCLUSTER_CONTEXT_NAME} --kubefed-namespace=kube-federation-system --v=2
-(Member cluster joining to Host Cluster)
+(Member cluster joining to Host cluster)
 ```
