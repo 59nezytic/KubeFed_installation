@@ -8,7 +8,6 @@ $ vi /root/.kube/config
 ```
 # kube_config example
 ```
-ex)
 host cluster = cluster1
 member cluster = cluster2
 ############################################################
