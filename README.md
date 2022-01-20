@@ -7,6 +7,7 @@ $ kubectl config get-contexts
 $ vi /root/.kube/config
 ```
 # kube_config example
+```
 host cluster = cluster1
 member cluster = cluster2
 ############################################################
@@ -45,7 +46,7 @@ users:
   user:
     client-certificate-data: REDACTED
     client-key-data: REDACTED
-
+```
 
 # After Change Your own kube_config
 ```
