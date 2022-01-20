@@ -1,6 +1,3 @@
-# KubeFed_installation
-Kubefed Installation Scripts
-
 # After Installation
 ```
 $ kubectl config get-contexts
