@@ -6,6 +6,7 @@ Kubefed Installation Scripts
 $ kubectl config get-contexts
 $ vi /root/.kube/config
 ```
+# After Change Your own kube_config
 ```
 $  systemctl daemon-reload
 $  systemctl restart kubelet
